@@ -5,7 +5,7 @@ FROM golang:1.20-alpine AS builder
 WORKDIR /app
 
 # Copy the Go application source code to the working directory
-COPY main.go .
+COPY app/ .
 
 # Build the Go application
 RUN go build -o app .
